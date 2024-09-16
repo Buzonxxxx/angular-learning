@@ -225,10 +225,13 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
+      <input (keyup)="changeImage($event)" [value]="updatedImageUrl">
       <h1>Hello, {{ title }}</h1>
       <h2>Hello {{ name.toUpperCase() }}</h2>
       <p>Hello {{ getName() }}</p>
       <p>Congratulations! Your app is running. 🎉</p>
+      <p>{{ 111 + 666 }}</p>
+      <img [src]= "imageUrl">
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
