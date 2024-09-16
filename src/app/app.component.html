@@ -225,7 +225,8 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <input (keyup)="changeImage($event)" [value]="updatedImageUrl">
+      <!-- Reference pic:  https://picsum.photos/images -->
+      <input (keyup)="changeImage($event)" [value]="imageUrl">
       <h1>Hello, {{ title }}</h1>
       <h2>Hello {{ name.toUpperCase() }}</h2>
       <p>Hello {{ getName() }}</p>
