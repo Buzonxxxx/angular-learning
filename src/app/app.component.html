@@ -1,9 +1,11 @@
+<!-- event binding -->
 <input (keyup)="changeImage($event)" [value]="imageUrl">
 
+<!-- Content Projection -->
 <app-post [img]="imageUrl" (imgSelected)="logImg($event)">
   <p>Some Caption</p>
 </app-post>
 
-<h2>Hello {{ name.toUpperCase() }}</h2>
+<h2>Hello {{ titleCase(name) }}</h2>
 <p>Hello {{ getName() }}</p>
 <p>{{ 111 + 666 }}</p>
